@@ -3,25 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home</title>
   <link rel="stylesheet" href="{{ url_for('static',filename='css/home.css') }}">
 </head>
 
 
-<body>  
-  
+<body>
+ 
   {% set menssagem=get_flashed_messages() %}
   {% if  menssagem %}
   <div class="invalido">
     {{ menssagem[0]}}
   </div>
   {% endif %}
-  
   <div id="form_fundo">
-  
-  <div id="form_fundo">
-    <strong>Instagram: @silvadh0</strong>
+    
+    <strong>Instagram: @silvadh0 </strong>
     <div id="form_frente">
       <h1>Login</h1>
   <form action="/login" id="login" method="post" >
