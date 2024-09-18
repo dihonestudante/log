@@ -9,7 +9,17 @@
 </head>
 
 
-<body>
+<body>  
+  
+  {% set menssagem=get_flashed_messages() %}
+  {% if  menssagem %}
+  <div class="invalido">
+    {{ menssagem[0]}}
+  </div>
+  {% endif %}
+  
+  <div id="form_fundo">
+  
   <div id="form_fundo">
     <strong>Instagram: @silvadh0</strong>
     <div id="form_frente">
