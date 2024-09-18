@@ -1,6 +1,6 @@
 body{
   background-color: aquamarine;
-  background: url(../imagens/img.jpeg) no-repeat;
+  background: url(/static/imagens/img.jpeg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   
@@ -31,7 +31,6 @@ div.invalido{
   border-radius: 30px;
   font-weight: bold;
 }
-
 
 label{
   font-size: 16px;
@@ -64,5 +63,5 @@ button:hover{
 strong{
   color:white;
   text-align: center;
-  font-size: 10px;
+  font-size: 15px;
 }
