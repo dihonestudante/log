@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width", initial-scale=1.0">
-    <title>dihoneStore</title>
+    <title>Document</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
         <div class="header-inner-content">
           <h1 class="logo">DIHONE<span>STORE</span></h1>
           <nav>
@@ -19,8 +19,8 @@
             </ul>
           </nav>
           <div class="nav-icon-container">
-            <img src="{{ url_for('static',filename='imagens/cart.png') }}" alt="">
-            <img class="menu-button" src="{{ url_for('static',filename='imagens/menu.png') }}" alt="">
+            <img src="{{ url_for('static',filename='images/cart.png') }}" alt="">
+            <img class="menu-button" src="{{ url_for('static',filename='images/menu.png') }}" alt="">
           </div>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 </div> <!--Fim do header-bottom-side-left-->
                 
                 <div class="header-botton-side-right">
-                    <img src="{{ url_for('static',filename='imagens/gaming-msi-header.png') }}" alt="">
+                    <img src="{{ url_for('static',filename='images/gaming-msi-header.png') }}" alt="">
 
                 </div> <!--Fim do header-bottom-side-right-->
 
@@ -48,6 +48,16 @@
 
         </div>
     </header>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu")
+        });
+
+    </script>
 
 </body>
 </html>
