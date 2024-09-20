@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+          <h1 class="logo">DIHONE<span>STORE</span></h1>
+          <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Sobre</li>
+                <li>Conta</li>
+            </ul>
+          </nav>
+          <div class="nav-icon-container">
+            <img src="{{ url_for('static',filename='images/cart.png') }}" alt="">
+            <img class="menu-button" src="{{ url_for('static',filename='images/menu.png') }}" alt="">
+          </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-botton-side">
+               
+                <div class="header-botton-side-left">
+                    <h2>Dê um Novo Estilo ao Seu Trabalho</h2>
+                    <p>
+                        Sucesso nem sempre tem haver com grandeza.Tem haver com concistência. Trabalho duro consistente supera o sucesso.
+                        A grandeza vira
+                    </p>
+                    <button>Ver agora &#8594;</button>
+
+                </div> <!--Fim do header-bottom-side-left-->
+                
+                <div class="header-botton-side-right">
+                    <img src="{{ url_for('static',filename='images/gaming-msi-header.png') }}" alt="">
+
+                </div> <!--Fim do header-bottom-side-right-->
+
+            </div> 
+
+        </div>
+    </header>
+
+</body>
+</html>
